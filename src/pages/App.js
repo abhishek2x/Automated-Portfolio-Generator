@@ -57,7 +57,7 @@ function App() {
                 <Profile switchComp={switchComp} />
               </Route>
 
-              <Route exact path="/:uid">
+              <Route exact path="/:uid/:designPattern">
                 <Portfolio />
               </Route>
 

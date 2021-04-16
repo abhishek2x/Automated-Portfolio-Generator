@@ -1,27 +1,25 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import About from '../components/Portfolio/About'
-import EduExp from '../components/Portfolio/EduExp'
-import Footer from '../components/Portfolio/Footer'
-import Main from '../components/Portfolio/Main'
-import Navbar from '../components/Portfolio/Navbar'
-import Skills from '../components/Portfolio/Skills'
+import About from '../components/design/design-0/About'
+import EduExp from '../components/design/design-0/EduExp'
+import Footer from '../components/design/design-0/Footer'
+import Main from '../components/design/design-0/Main'
+import Navbar from '../components/design/design-0/Navbar'
+import Skills from '../components/design/design-0/Skills'
+import Base from '../components/design/design-1/Base'
 import { FirebaseUserDefaultData } from '../components/utils/defaultData'
 import { database } from '../firebase-config'
 
 function Portfolio() {
-  const { uid } = useParams();
+  const { uid, designPattern } = useParams();
   const [docData, setDocData] = useState(FirebaseUserDefaultData)
 
-  const fetchData = useCallback(async() => {
+  const fetchData = useCallback(async () => {
     var docRef = database.collection("users").doc(uid);
 
     await docRef.get().then(function (doc) {
       if (doc.exists) {
         setDocData(doc.data())
-        // console.log("All data: ", doc.data())
-        // console.log("All data: ", docData)
-        // console.log("Image: ", docData.image)
       } else {
         console.log("No such document!");
       }
@@ -34,7 +32,7 @@ function Portfolio() {
     fetchData();
   }, []);
 
-  return (
+  return designPattern === '0' ? (
     <>
       <Navbar />
       <Main
@@ -63,6 +61,10 @@ function Portfolio() {
       <Footer
         links={docData.Links}
       />
+    </>
+  ) : (
+    <>
+      <Base docData={docData}/>
     </>
   )
 }

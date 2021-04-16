@@ -27,6 +27,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
+  btns: {
+    margin: 3,
+  },
   mainHeading: {
     [theme.breakpoints.down('sm')]: {
       fontSize: 'xx-large',
@@ -99,19 +102,21 @@ export default function BaseTemp(props) {
                   (
                     <Grid item>
                       <Button
+                      className={classes.btns}
                         variant="contained"
                         color="secondary"
                         startIcon={<CallMissedOutgoingIcon />}
                         href='#working'
                       >
                         Explore
-                  </Button>
+                      </Button>
                     </Grid>
 
                   ) :
                   (
                     <Grid item>
                       <Button
+                      className={classes.btns}
                         variant="contained"
                         color="secondary"
                         startIcon={<CallMissedOutgoingIcon />}
@@ -125,29 +130,44 @@ export default function BaseTemp(props) {
                 }
 
                 <Grid item>
-                  {!user ?
-                    (
-                      <Button
-                        startIcon={<CalendarViewDayIcon />}
-                        variant='contained'
-                        color="secondary">
-                        <LoginModal />
-                      </Button>
-                    ) :
-                    (
-                      <Button
-                        variant="contained"
-                        color="secondary"
-                        target="_blank"
-                        startIcon={<CalendarViewDayIcon />}
-                        href={`/${userId}`}
-                      >
-                        View My Portfolio
-                      </Button>
-                    )
+                  {!user &&
+                    <Button
+                    className={classes.btns}
+                      startIcon={<CalendarViewDayIcon />}
+                      variant='contained'
+                      color="secondary">
+                      <LoginModal />
+                    </Button>
                   }
                 </Grid>
               </Grid>
+              {user && <Grid container spacing={2} justify="center">
+                <Grid>
+                  <Button
+                  className={classes.btns}
+                    variant="contained"
+                    color="secondary"
+                    target="_blank"
+                    startIcon={<CalendarViewDayIcon />}
+                    href={`/${userId}/0`}
+                  >
+                    Portfolio: Design 1
+                  </Button>
+
+                </Grid>
+                <Grid>
+                  <Button
+                  className={classes.btns}
+                    variant="contained"
+                    color="secondary"
+                    target="_blank"
+                    startIcon={<CalendarViewDayIcon />}
+                    href={`/${userId}/1`}
+                  >
+                    Portfolio: Design 2
+                  </Button>
+                </Grid>
+              </Grid>}
             </div>
           </Container>
         </div>
