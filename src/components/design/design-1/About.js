@@ -65,7 +65,7 @@ function About({
           variant="p"
           class={classes.para}
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, nulla? Beatae laudantium unde cum animi, voluptatum repudiandae sint eaque impedit porro nam iure accusantium, labore veniam at ipsum sequi quasi non a asperiores alias minima! Doloribus corrupti laborum sunt amet, necessitatibus expedita suscipit repudiandae odio itaque dolor, fugit esse accusamus?
+          {desc}
         </Typography>
 
       </div>
