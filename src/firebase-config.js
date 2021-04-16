@@ -1,12 +1,14 @@
 import firebase from 'firebase'
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCqJbZ2CrSB_P9ZiIXeBAXbKRyaDbdw5co",
-  authDomain: "automated-portfolio-generator.firebaseapp.com",
-  projectId: "automated-portfolio-generator",
-  storageBucket: "automated-portfolio-generator.appspot.com",
-  messagingSenderId: "448064427092",
-  appId: "1:448064427092:web:d70af744a8e4e57e8dc9c1"
+  apiKey: "AIzaSyDUo7OXVlPeHd3JNouL31hqTiOOM-OPeHo",
+  authDomain: "vit-folder.firebaseapp.com",
+  projectId: "vit-folder",
+  storageBucket: "vit-folder.appspot.com",
+  messagingSenderId: "637430274103",
+  appId: "1:637430274103:web:112403c677b617bc6fc7b2",
+  measurementId: "G-JNZ872Y903"
 };
 
 // Initialize Firebase
