@@ -67,7 +67,7 @@ function Common({
       <img
         className={classes.img}
         src={image}
-        alt="image"
+        alt="myself"
       />
 
       <div className={classes.name}>
