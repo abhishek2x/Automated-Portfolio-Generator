@@ -1,5 +1,6 @@
-# VITB-Folder
-
+<h1 align="center">
+    ✨ VIT FOLDER ✨
+</h1>
 ##  Automated Portfolio Generator
 
 **Automate Portfolio Generator a service which allows you to create your portfolio in easiest way possible.** It as a Progressive Web Application, build in _React Js_.
@@ -21,14 +22,28 @@ This is exactly what it did: **"Automated Portfolio Generator"**
 
 ---
 
+<div align="center">
+
+![Issues tag](https://img.shields.io/github/issues/abhishek2x/VITB-folder)
+![Forks tag](https://img.shields.io/github/forks/abhishek2x/VITB-folder)
+![Stars](https://img.shields.io/github/stars/abhishek2x/VITB-folder?style=social)
+![Licence](https://img.shields.io/github/license/abhishek2x/VITB-folder)
+![twitter](https://img.shields.io/twitter/follow/Abhishe51428266?style=social)
+
+</div>
+
+## ❤️ Note to new contributors
+
+Thank you for considering and taking the time to contribute! Before contributing kindly read and follow [Code of Conduct](CODE_OF_CONDUCT.md). To help new developers/contributors there are set of instructions added in [CONTRIBUTING.md](CONTRIBUTING.md). Which describes the intial stages for working on this project. Also refer the [MIT License](LICENSE).
+
+---
+
 ## Getting Started
 
 - Fork and Clone the repo <br/>
-  `git clone https://github.com/abhishek2x/Dr-Generator.git`
+  `git clone https://github.com/<your-username>/VITB-folder.git`
 - Change the directory<br/>
-  `cd Dr-Generator`
-- Add Firebase configurations (in src/firebase-config.js)<br/>
-  `Create a Firebase app, and add the config file`
+  `cd VITB-folder`
 - Install node dependencies<br/>
   `npm i` or `npm install` or `yarn`
 - Start the Server<br/>
@@ -82,6 +97,7 @@ And you are ready to make pull request.
 
 | <a href="https://github.com/abhishek2x"><img src="https://avatars.githubusercontent.com/u/53976003?s=460&u=3207af548a3204a51d49db9a48c28aa55aff83a5&v=4" width=70px height=70px /></a> |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Abhishek Srivastava](https://www.github.com/abhishek2x/)                                                                                                   |
 
-> **_Need help?_** > **_Feel free to contact me @ [abhisheksrivastavabbn@gmail.com](mailto:abhisheksrivastavabbn@gmail.com)_**
+| [Abhishek Srivastava](https://www.github.com/abhishek2x/)                                                                                             |
+
+> **_Need help?_** > **_Feel free to contact me @[abhisheksrivastavabbn@gmail.com](mailto:abhisheksrivastavabbn@gmail.com)_**
