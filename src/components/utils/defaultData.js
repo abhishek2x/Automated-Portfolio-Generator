@@ -1,6 +1,7 @@
 export const FirebaseUserDefaultData = {
   'FirstName': 'firstname',
   'LastName': 'lastname',
+  'RegistrationNumber': '19BCE10071',
   'Description': 'Hello, this is my description',
   'tagline': 'This is a quote/tagline',
   'email': 'test@email.com',

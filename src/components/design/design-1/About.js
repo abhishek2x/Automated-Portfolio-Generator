@@ -1,5 +1,7 @@
-import { makeStyles, Typography } from '@material-ui/core';
+import { Button, Grid, makeStyles, Typography } from '@material-ui/core';
 import React from 'react'
+import EduCard from "./EduCard"
+import ExpCard from "./ExpCard"
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -28,6 +30,15 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: '1.5715',
     letterSpacing: '0.6px',
     fontFamily: '-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji'
+  },
+  skillbox: {
+    display: 'flex',
+    justifyContent: 'flex-start',
+    flexWrap: 'wrap',
+    marginBottom: 20,
+  },
+  skillBtn: {
+    margin: 10,
   }
 }));
 
@@ -43,84 +54,83 @@ function About({
   return (
     <div className={classes.main}>
       <div>
-        <Typography 
-         variant="h4"
-         component="h3"
-         class={classes.heading}
+        <Typography
+          variant="h4"
+          component="h3"
+          class={classes.heading}
         >
           About Me
         </Typography>
-        <Typography 
-         variant="p"
-         class={classes.para}
+        <Typography
+          variant="p"
+          class={classes.para}
         >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, nulla? Beatae laudantium unde cum animi, voluptatum repudiandae sint eaque impedit porro nam iure accusantium, labore veniam at ipsum sequi quasi non a asperiores alias minima! Doloribus corrupti laborum sunt amet, necessitatibus expedita suscipit repudiandae odio itaque dolor, fugit esse accusamus?
         </Typography>
-        
+
       </div>
       <div>
-        <Typography 
-         variant="h4"
-         component="h3"
-         class={classes.heading}
+        <Typography
+          variant="h4"
+          component="h3"
+          class={classes.heading}
         >
           Education
         </Typography>
-        <Typography 
-         variant="p"
-         class={classes.para}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, nulla? Beatae laudantium unde cum animi, voluptatum repudiandae sint eaque impedit porro nam iure accusantium, labore veniam at ipsum sequi quasi non a asperiores alias minima! Doloribus corrupti laborum sunt amet, necessitatibus expedita suscipit repudiandae odio itaque dolor, fugit esse accusamus?
-        </Typography>
-        
+
+        <Grid container spacing={3}>
+          {education.map((edu, idx) =>
+            <Grid item md={6} xs={12}>
+              <EduCard edu={edu} />
+            </Grid>
+          )}
+        </Grid>
       </div>
       <div>
-        <Typography 
-         variant="h4"
-         component="h3"
-         class={classes.heading}
+        <Typography
+          variant="h4"
+          component="h3"
+          class={classes.heading}
         >
           Experience
         </Typography>
-        <Typography 
-         variant="p"
-         class={classes.para}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, nulla? Beatae laudantium unde cum animi, voluptatum repudiandae sint eaque impedit porro nam iure accusantium, labore veniam at ipsum sequi quasi non a asperiores alias minima! Doloribus corrupti laborum sunt amet, necessitatibus expedita suscipit repudiandae odio itaque dolor, fugit esse accusamus?
-        </Typography>
-        
+
+        <Grid container spacing={3}>
+          {experience.map((exp, idx) =>
+            <Grid item md={6} xs={12}>
+              <ExpCard exp={exp} />
+            </Grid>
+          )}
+        </Grid>
       </div>
       <div>
-        <Typography 
-         variant="h4"
-         component="h3"
-         class={classes.heading}
+        <Typography
+          variant="h4"
+          component="h3"
+          class={classes.heading}
         >
           Skills
         </Typography>
-        <Typography 
-         variant="p"
-         class={classes.para}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, nulla? Beatae laudantium unde cum animi, voluptatum repudiandae sint eaque impedit porro nam iure accusantium, labore veniam at ipsum sequi quasi non a asperiores alias minima! Doloribus corrupti laborum sunt amet, necessitatibus expedita suscipit repudiandae odio itaque dolor, fugit esse accusamus?
-        </Typography>
-        
+        <div className={classes.skillbox}>
+          {skill.map((sk, idx) => <Button className={classes.skillBtn} variant="contained">{sk}</Button>)}
+        </div>
       </div>
       <div>
-        <Typography 
-         variant="h4"
-         component="h3"
-         class={classes.heading}
+        <Typography
+          variant="h4"
+          component="h3"
+          class={classes.heading}
         >
           Achievements
         </Typography>
-        <Typography 
-         variant="p"
-         class={classes.para}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, nulla? Beatae laudantium unde cum animi, voluptatum repudiandae sint eaque impedit porro nam iure accusantium, labore veniam at ipsum sequi quasi non a asperiores alias minima! Doloribus corrupti laborum sunt amet, necessitatibus expedita suscipit repudiandae odio itaque dolor, fugit esse accusamus?
-        </Typography>
         
+        {achievements.map((achievement, idx) => <Typography
+          variant="p"
+          class={classes.para}
+        >
+          {idx + 1}- {achievement}
+        </Typography>)}
+
       </div>
     </div>
   )

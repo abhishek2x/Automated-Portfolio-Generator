@@ -20,14 +20,18 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginTop: '4%',
+    marginTop: '14%',
+  },
+  logoBox: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
+  logo: {
+    height: '75px',
   },
   nav: {
     width: '75%',
     backgroundColor: '#fff',
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-around',
     borderTopLeftRadius: '200px',
     borderTopRightRadius: '8rem'
   },
@@ -49,14 +53,15 @@ function Base({ docData }) {
 
   return (
     <div className={classes.root}>
+
+
       <div className={classes.navigation}>
-        <img src={vit} alt="logo" />
+        <div className={classes.logoBox}>
+          <img className={classes.logo} src={vit} alt="logo" />
+        </div>
         <div className={classes.nav}>
-          <h4>Hello</h4>
-          <h4>Hello</h4>
-          <h4>Hello</h4>
-          <h4>Hello</h4>
-          <h4>Hello</h4>
+          {/* <h4>Basic Details</h4>
+          <h4>Hello</h4> */}
         </div>
       </div>
       <Grid container className={classes.main} >
@@ -70,6 +75,7 @@ function Base({ docData }) {
             resume={docData.resume}
             image={docData.image}
             links={docData.Links}
+            RegistrationNumber={docData.RegistrationNumber}
           />
         </Grid>
         <Grid
