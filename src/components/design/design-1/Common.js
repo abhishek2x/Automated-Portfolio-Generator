@@ -46,7 +46,6 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'row',
     marginTop: 20,
     flexWrap: 'wrap',
-    // justifyContent: 'space-around'
   }
 }));
 
@@ -69,7 +68,6 @@ function Common({
         src={image}
         alt="myself"
       />
-
       <div className={classes.name}>
         <Typography
           className={classes.typograph}
@@ -86,7 +84,6 @@ function Common({
           container
           color="#44566c"
           fontWeight="fontWeightBold"
-
         >
           <b>{last}</b>
         </Typography>
@@ -119,11 +116,10 @@ function Common({
           <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin "><g><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></g></svg>
           <Typography
             varient="subtitle"
-            style={{marginLeft: 7}}
+            style={{ marginLeft: 7 }}
             component="h1"
             color="#fff"
           >
-
             {city}, {country}
           </Typography>
         </div>
@@ -132,23 +128,20 @@ function Common({
           <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar "><g><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></g></svg>
           <Typography
             varient="subtitle"
-            style={{marginLeft: 7}}
+            style={{ marginLeft: 7 }}
             component="h1"
             color="#fff"
           >
-
             {RegistrationNumber}
           </Typography>
         </div>
 
         <div className={classes.data}>
-          {/* <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar "><g><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></g></svg>
-          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail "><g><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></g></svg> */}
           <Typography
             varient="subtitle"
-            style={{marginLeft: 7}}
-            component="h1"
+            component="p"
             color="#fff"
+            class="email"
           >
             {email}
           </Typography>

@@ -123,7 +123,7 @@ function About({
         >
           Achievements
         </Typography>
-        
+
         {achievements.map((achievement, idx) => <Typography
           variant="p"
           class={classes.para}

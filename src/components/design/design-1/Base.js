@@ -6,7 +6,7 @@ import Common from './Common';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    height: '100vh',
+    height: '100%',
     width: '100%',
     backgroundColor: '#f0f2f5',
     display: 'flex',
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginTop: '14%',
+    marginTop: '5%',
   },
   logoBox: {
     display: 'flex',
@@ -53,15 +53,11 @@ function Base({ docData }) {
 
   return (
     <div className={classes.root}>
-
-
       <div className={classes.navigation}>
         <div className={classes.logoBox}>
           <img className={classes.logo} src={vit} alt="logo" />
         </div>
         <div className={classes.nav}>
-          {/* <h4>Basic Details</h4>
-          <h4>Hello</h4> */}
         </div>
       </div>
       <Grid container className={classes.main} >

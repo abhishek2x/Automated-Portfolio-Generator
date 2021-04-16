@@ -10,6 +10,7 @@ import NotFound from './NotFound';
 import ToggleButton from '@material-ui/lab/ToggleButton';
 import Brightness6Icon from '@material-ui/icons/Brightness6';
 import { UidContextProvider } from '../context/uidContext';
+import '../App.css'
 
 function App() {
   const [DarkMode, setDarkMode] = useState(false);

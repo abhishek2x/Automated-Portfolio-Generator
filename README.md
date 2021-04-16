@@ -2,9 +2,7 @@
     ✨ VIT FOLDER ✨
 </h1>
 
-## Automated Portfolio Generator
-
-**Automate Portfolio Generator a service which allows you to create your portfolio in easiest way possible.** It as a Progressive Web Application, build in _React Js_.
+**VIT FOLDER a service which allows you to create your portfolio in easiest way possible.** It as a Progressive Web Application, build in _React Js_.
 
 
 <div align="center">

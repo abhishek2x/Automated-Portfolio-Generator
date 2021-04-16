@@ -3,3 +3,25 @@
   margin: 0px;
   padding: 0%;
 }
+
+@media (max-width: 670px) {
+  h2, h5, span, h3, button, p {
+    font-size: smaller;
+  }
+  h5.MuiTypography-root {
+    font-size: 0.6rem;
+  }
+  h3.makeStyles-heading-17 {
+    font-size: 1.5rem;
+  }
+  img.makeStyles-logo-4 {
+    width: 70px;
+    height: auto;
+  }
+  p.email {
+    display: none;
+  }
+  span.makeStyles-para-18 {
+    font-size: small;
+  }
+}
