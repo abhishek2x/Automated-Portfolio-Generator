@@ -5,7 +5,7 @@ import { createMuiTheme, Paper } from '@material-ui/core';
 import { UserContextProvider } from '../context/userContext';
 import Portfolio from './Portfolio';
 import Profile from './Profile'
-import { Switch as RouterSwitch, BrowserRouter as Router, Route } from "react-router-dom";
+import { Switch as RouterSwitch, HashRouter as Router, Route } from "react-router-dom";
 import NotFound from './NotFound';
 import ToggleButton from '@material-ui/lab/ToggleButton';
 import Brightness6Icon from '@material-ui/icons/Brightness6';

@@ -1,6 +1,5 @@
 {
-  "homepage": "https://abhishek2x.github.io/VITB-folder",
-  "name": "portfolio-generator",
+  "name": "vitb-folder",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
