@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Container, IconButton, InputAdornment, makeStyles, TextField, Typography } from '@material-ui/core';
+import { Button, Container, FormControlLabel, IconButton, InputAdornment, makeStyles, Radio, RadioGroup, TextField, Typography } from '@material-ui/core';
 import { Visibility, VisibilityOff } from '@material-ui/icons';
 import PersonIcon from '@material-ui/icons/Person';
 
@@ -26,11 +26,9 @@ function SignupForm({
   handleChange,
   handleClickShowPassword,
   handleMouseDownPassword,
-  signInGoogle,
-  signInGitHub,
   values,
-  setValues,
-  CreateUser }) {
+  CreateUser,
+  handleRadio }) {
 
   const classes = useStyles();
   return (
@@ -80,6 +78,32 @@ function SignupForm({
             </InputAdornment>
           }}
         />
+
+        <RadioGroup
+          row
+          aria-label="position"
+          name="position"
+          defaultValue={values.isDeveloper}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}
+        >
+          <FormControlLabel
+            checked={!values.isDeveloper}
+            onChange={handleRadio}
+            control={<Radio color="primary" />}
+            label="Recruiter"
+          />
+          <FormControlLabel
+            checked={values.isDeveloper}
+            onChange={handleRadio}
+            control={<Radio color="primary" />}
+            label="Developer"
+          />
+        </RadioGroup>
+
         <Button
           type="submit"
           variant="contained"

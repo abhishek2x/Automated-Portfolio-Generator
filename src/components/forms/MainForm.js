@@ -66,7 +66,8 @@ function MainForm({
   values,
   setValues,
   CreateUser,
-  SignInUser }) {
+  SignInUser,
+  handleRadio }) {
 
 
   const classes = useStyles();
@@ -107,6 +108,7 @@ function MainForm({
           values={values}
           setValues={setValues}
           CreateUser={CreateUser}
+          handleRadio={handleRadio}
         />
       </TabPanel>
       <br />

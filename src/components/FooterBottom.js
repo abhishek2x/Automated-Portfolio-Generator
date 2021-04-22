@@ -5,8 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
+    padding: theme.spacing(2),
   },
 }));
 
@@ -14,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      Developed by {' '}
+      Developed with ❤️ by {' '}
       <Link color="inherit" href="https://portfolio.abhisheksrivastava.me">
         Abhishek Srivastava
       </Link>
@@ -25,17 +24,12 @@ function Copyright() {
 function FooterBottom() {
   const classes = useStyles();
   return (
-
     <footer className={classes.footer}>
-      <Typography variant="h6" align="center" gutterBottom>
-        Automated Portfolio Generator
-    </Typography>
       <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
         Your Portfolio reflects your brand!
     </Typography>
       <Copyright />
     </footer>
-
   )
 }
 

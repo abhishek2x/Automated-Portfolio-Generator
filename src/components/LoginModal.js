@@ -31,6 +31,7 @@ export default function LoginModal() {
     email: '',
     password: '',
     showPassword: false,
+    isDeveloper: true
   });
 
   // Basic Functions
@@ -49,8 +50,11 @@ export default function LoginModal() {
   const handleClose = () => {
     setOpen(false);
   };
+  const handleRadio = () => {
+    setValues({ ...values, isDeveloper: !values.isDeveloper });
+  }
 
-// Authentication Functions
+  // Authentication Functions
   const signInGoogle = (e) => {
     e.preventDefault();
     auth
@@ -100,7 +104,6 @@ export default function LoginModal() {
       .then((userCredential) => {
         var userLoggedIn = userCredential.user;
         console.log("Loggedin user", userLoggedIn)
-        // setUser(userCreated.displayName) -> this will be null
         setUser(userLoggedIn.email)
         alert('User Logged in')
       })
@@ -130,7 +133,7 @@ export default function LoginModal() {
         docRef.get()
           .then((docSnapshot) => {
             if (!docSnapshot.exists) {
-              docRef.set(FirebaseUserDefaultData)
+              docRef.set({ ...FirebaseUserDefaultData, isDeveloper: values.isDeveloper })
                 .then(() => {
                   console.log(userCredential, userCreated.email)
                   setUser(userCreated.email)
@@ -187,6 +190,7 @@ export default function LoginModal() {
                   setValues={setValues}
                   CreateUser={CreateUser}
                   SignInUser={SignInUser}
+                  handleRadio={handleRadio}
                 />
               ) :
               (

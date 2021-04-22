@@ -13,19 +13,16 @@ import CalendarViewDayIcon from '@material-ui/icons/CalendarViewDay';
 import NavbarTop from './NavbarTop';
 import FooterBottom from './FooterBottom';
 import { auth } from '../firebase-config';
-import { Divider } from '@material-ui/core';
+import videoBG from '../static/videos/video.mp4'
+import "../static/css/video.css"
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(8, 0, 6),
+    // backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(14, 5, 10),
   },
   heroButtons: {
     marginTop: theme.spacing(4),
-  },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
   },
   btns: {
     margin: 3,
@@ -57,21 +54,22 @@ export default function BaseTemp(props) {
     }
   }, [user])
 
-
   return (
     <React.Fragment>
 
       <NavbarTop switchComp={props.switchComp} />
 
-      <main>
-        {/* Hero unit */}
+      <main class="videoContainer">
+        <video>
+          <source src={videoBG} type="video/mp4" />
+        </video>
         <div className={classes.heroContent}>
           <Container>
             <Typography
               component="h1"
               variant="h2"
               align="center"
-              color="textPrimary"
+              color="#fff"
               className={classes.mainHeading}
             >
               Automated Portfolio Generator
@@ -81,7 +79,7 @@ export default function BaseTemp(props) {
               variant="h5"
               align="center"
               className={classes.secondHeading}
-              color="textSecondary"
+              color="#fff"
               paragraph>
               Portfolios are a great way to demonstrate the competencies you would list on a resume or talk about in an interview — they allow you to show and not just tell.
             </Typography>
@@ -102,7 +100,7 @@ export default function BaseTemp(props) {
                   (
                     <Grid item>
                       <Button
-                      className={classes.btns}
+                        className={classes.btns}
                         variant="contained"
                         color="secondary"
                         startIcon={<CallMissedOutgoingIcon />}
@@ -116,7 +114,7 @@ export default function BaseTemp(props) {
                   (
                     <Grid item>
                       <Button
-                      className={classes.btns}
+                        className={classes.btns}
                         variant="contained"
                         color="secondary"
                         startIcon={<CallMissedOutgoingIcon />}
@@ -132,7 +130,7 @@ export default function BaseTemp(props) {
                 <Grid item>
                   {!user &&
                     <Button
-                    className={classes.btns}
+                      className={classes.btns}
                       startIcon={<CalendarViewDayIcon />}
                       variant='contained'
                       color="secondary">
@@ -144,7 +142,7 @@ export default function BaseTemp(props) {
               {user && <Grid container spacing={2} justify="center">
                 <Grid>
                   <Button
-                  className={classes.btns}
+                    className={classes.btns}
                     variant="contained"
                     color="secondary"
                     target="_blank"
@@ -157,7 +155,7 @@ export default function BaseTemp(props) {
                 </Grid>
                 <Grid>
                   <Button
-                  className={classes.btns}
+                    className={classes.btns}
                     variant="contained"
                     color="secondary"
                     target="_blank"
@@ -173,11 +171,12 @@ export default function BaseTemp(props) {
         </div>
       </main>
 
-      <Divider />
+      {/* <Divider />
       <WorkingSection />
       <Divider />
       <FeatureSection />
-      <Divider />
+      <Divider /> */}
+
       <FooterBottom />
     </React.Fragment>
   );

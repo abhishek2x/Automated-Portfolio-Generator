@@ -7,6 +7,7 @@ export const FirebaseUserDefaultData = {
   'email': 'test@email.com',
   'city': 'Mumbai',
   'country': 'India',
+  'isDeveloper': true,
   'resume': 'https://docs.google.com/document/d/140_kyeX5V-OYecJO4WXtOEOKYvS2zt8uTEZmOD8BQA8/edit?usp=sharing',
   'image': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQPrvDwVG49SBYvvDQI0IqEFnuPr-iMGT7UA&usqp=CAU',
   'Skills': ['Skill1', 'Skill2', 'Skill3'],
