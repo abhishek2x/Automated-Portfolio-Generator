@@ -1,13 +1,12 @@
 <h1 align="center">
     ✨ VIT FOLDER ✨
-</h1>
-
-**VIT FOLDER a service that allows you to create your portfolio in the easiest way possible**. It is a Progressive Web Application, build in _React Js_.
-
-
 <div align="center">
   <img src="Readme-assets/logo.png" />
 </div>
+
+</h1>
+
+**VIT FOLDER a service that allows you to create your portfolio in the easiest way possible**. It is a Progressive Web Application, build in _React Js_.
 
 ## Description
 
