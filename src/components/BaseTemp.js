@@ -13,8 +13,7 @@ import CalendarViewDayIcon from '@material-ui/icons/CalendarViewDay';
 import NavbarTop from './NavbarTop';
 import FooterBottom from './FooterBottom';
 import { auth } from '../firebase-config';
-import videoBG from '../static/videos/video.mp4'
-import "../static/css/video.css"
+import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
@@ -60,9 +59,6 @@ export default function BaseTemp(props) {
       <NavbarTop switchComp={props.switchComp} />
 
       <main class="videoContainer">
-        <video>
-          <source src={videoBG} type="video/mp4" />
-        </video>
         <div className={classes.heroContent}>
           <Container>
             <Typography
@@ -171,11 +167,11 @@ export default function BaseTemp(props) {
         </div>
       </main>
 
-      {/* <Divider />
+      <Divider />
       <WorkingSection />
       <Divider />
       <FeatureSection />
-      <Divider /> */}
+      <Divider />
 
       <FooterBottom />
     </React.Fragment>
