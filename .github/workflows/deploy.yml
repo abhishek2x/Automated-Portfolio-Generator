@@ -5,8 +5,9 @@ on:
     branches: [main]
 
 jobs:
-  deploy:
+  firebase-deploy:
     runs_on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@main
       - uses: actions/setup-node@main
