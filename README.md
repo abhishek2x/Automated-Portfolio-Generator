@@ -16,7 +16,7 @@ Most students don't know how can they develop one for themselves since some of t
 
 This is exactly what it did: **"Automated Portfolio Generator"**
 
-<a href="https://automated-portfolio-generator.web.app/" >**Link of the website**</a>
+<a href="vit-folder.web.app/" >**Link of the website**</a>
 
 ---
 
