@@ -1,12 +1,12 @@
 <h1 align="center">
-    ✨ VIT FOLDER ✨
+    ✨ Automated Portfolio Generator ✨
 <div align="center">
   <img src="Readme-assets/logo.png" />
 </div>
 
 </h1>
 
-**VIT FOLDER a service that allows you to create your portfolio in the easiest way possible**. It is a Progressive Web Application, build in _React Js_.
+**Automated Portfolio Generator a service that allows you to create your portfolio in the easiest way possible**. It is a Progressive Web Application, build in _React Js_.
 
 ## Description
 
@@ -22,10 +22,10 @@ This is exactly what it did: **"Automated Portfolio Generator"**
 
 <div align="center">
 
-![Issues tag](https://img.shields.io/github/issues/abhishek2x/VITB-folder)
-![Forks tag](https://img.shields.io/github/forks/abhishek2x/VITB-folder)
-![Stars](https://img.shields.io/github/stars/abhishek2x/VITB-folder?style=social)
-![Licence](https://img.shields.io/github/license/abhishek2x/VITB-folder)
+![Issues tag](https://img.shields.io/github/issues/abhishek2x/Automated-Portfolio-Generator)
+![Forks tag](https://img.shields.io/github/forks/abhishek2x/Automated-Portfolio-Generator)
+![Stars](https://img.shields.io/github/stars/abhishek2x/Automated-Portfolio-Generator?style=social)
+![Licence](https://img.shields.io/github/license/abhishek2x/Automated-Portfolio-Generator)
 ![twitter](https://img.shields.io/twitter/follow/Abhishe51428266?style=social)
 
 </div>
@@ -39,9 +39,9 @@ Thank you for considering and taking the time to contribute! Before contributing
 ## Getting Started
 
 - Fork and Clone the repo <br/>
-  `git clone https://github.com/<your-username>/VITB-folder.git`
+  `git clone https://github.com/<your-username>/Automated-Portfolio-Generator.git`
 - Change the directory<br/>
-  `cd VITB-folder`
+  `cd Automated-Portfolio-Generator`
 - Install node dependencies<br/>
   `npm i` or `npm install` or `yarn`
 - Start the Server<br/>
